@@ -1,11 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\EnemyAI.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\AI_JS.js">
     <Files>
       <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.js" Line="1" Column="1" />
-      <File FileName="Assets\AI_JS.js" Line="1" Column="1" />
-      <File FileName="Assets\Rotator.cs" Line="11" Column="1" />
-      <File FileName="Assets\EnemyAI.js" Line="10" Column="1" />
+      <File FileName="Assets\_Scripts\AI_JS.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: abf39f9c4f6a3a84a958300b0645cf72
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Butt_Chaps
+    100002: //RootNode
+    100004: Dome_Tail
+    100006: Head
+    100008: Hip_1
+    100010: Hip_2
+    100012: Hip_3
+    100014: joint1
+    100016: joint10
+    100018: joint11
+    100020: joint12
+    100022: joint13
+    100024: joint14
+    100026: joint15
+    100028: joint16
+    100030: joint2
+    100032: joint3
+    100034: joint4
+    100036: joint5
+    100038: joint6
+    100040: joint7
+    100042: joint8
+    100044: joint9
+    100046: Left_Elbow1
+    100048: Left_Elbow2
+    100050: Left_Leg_Back4_Foot
+    100052: Left_Leg_Back4_Joint
+    100054: Left_Leg_Back4_Knee
+    100056: Left_Leg_Back4_Knee2
+    100058: Left_Leg_Front1_Joint
+    100060: Left_Leg_Front1_Knee
+    100062: Left_Leg_Front1_Knee2
+    100064: Left_Shoulder
+    100066: Left_StubHand
+    100068: Leg_Leg_Front1_Foot
+    100070: modo_xpt_zbrush_0010
+    100072: modo_xpt_zbrush_0010_MeshPart0
+    100074: modo_xpt_zbrush_0010_MeshPart1
+    100076: modo_xpt_zbrush_0010_MeshPart2
+    100078: Neck
+    100080: nurbsCircle11
+    100082: Origin
+    100084: Right_Elbow1
+    100086: Right_Elbow2
+    100088: Right_Leg_Back4_Foot
+    100090: Right_Leg_Back4_Joint
+    100092: Right_Leg_Back4_Knee
+    100094: Right_Leg_Back4_Knee2
+    100096: Right_Leg_Front1_Foot
+    100098: Right_Leg_Front1_Joint
+    100100: Right_Leg_Front1_Knee
+    100102: Right_Leg_Front1_Knee2
+    100104: Right_Shoulder
+    100106: Right_StubHand
+    100108: Spine
+    100110: Torso
+    400000: Butt_Chaps
+    400002: //RootNode
+    400004: Dome_Tail
+    400006: Head
+    400008: Hip_1
+    400010: Hip_2
+    400012: Hip_3
+    400014: joint1
+    400016: joint10
+    400018: joint11
+    400020: joint12
+    400022: joint13
+    400024: joint14
+    400026: joint15
+    400028: joint16
+    400030: joint2
+    400032: joint3
+    400034: joint4
+    400036: joint5
+    400038: joint6
+    400040: joint7
+    400042: joint8
+    400044: joint9
+    400046: Left_Elbow1
+    400048: Left_Elbow2
+    400050: Left_Leg_Back4_Foot
+    400052: Left_Leg_Back4_Joint
+    400054: Left_Leg_Back4_Knee
+    400056: Left_Leg_Back4_Knee2
+    400058: Left_Leg_Front1_Joint
+    400060: Left_Leg_Front1_Knee
+    400062: Left_Leg_Front1_Knee2
+    400064: Left_Shoulder
+    400066: Left_StubHand
+    400068: Leg_Leg_Front1_Foot
+    400070: modo_xpt_zbrush_0010
+    400072: modo_xpt_zbrush_0010_MeshPart0
+    400074: modo_xpt_zbrush_0010_MeshPart1
+    400076: modo_xpt_zbrush_0010_MeshPart2
+    400078: Neck
+    400080: nurbsCircle11
+    400082: Origin
+    400084: Right_Elbow1
+    400086: Right_Elbow2
+    400088: Right_Leg_Back4_Foot
+    400090: Right_Leg_Back4_Joint
+    400092: Right_Leg_Back4_Knee
+    400094: Right_Leg_Back4_Knee2
+    400096: Right_Leg_Front1_Foot
+    400098: Right_Leg_Front1_Joint
+    400100: Right_Leg_Front1_Knee
+    400102: Right_Leg_Front1_Knee2
+    400104: Right_Shoulder
+    400106: Right_StubHand
+    400108: Spine
+    400110: Torso
+    4300000: modo_xpt_zbrush_0010_MeshPart0
+    4300002: modo_xpt_zbrush_0010_MeshPart1
+    4300004: modo_xpt_zbrush_0010_MeshPart2
+    7400000: Walk
+    7400002: Idle
+    9500000: //RootNode
+    13700000: modo_xpt_zbrush_0010_MeshPart0
+    13700002: modo_xpt_zbrush_0010_MeshPart1
+    13700004: modo_xpt_zbrush_0010_MeshPart2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Head/Neck
+        weight: 1
+      - path: Head/Neck/Left_Shoulder
+        weight: 1
+      - path: Head/Neck/Left_Shoulder/Left_Elbow1
+        weight: 1
+      - path: Head/Neck/Left_Shoulder/Left_Elbow1/Left_Elbow2
+        weight: 1
+      - path: Head/Neck/Left_Shoulder/Left_Elbow1/Left_Elbow2/Left_StubHand
+        weight: 1
+      - path: Head/Neck/Right_Shoulder
+        weight: 1
+      - path: Head/Neck/Right_Shoulder/Right_Elbow1
+        weight: 1
+      - path: Head/Neck/Right_Shoulder/Right_Elbow1/Right_Elbow2
+        weight: 1
+      - path: Head/Neck/Right_Shoulder/Right_Elbow1/Right_Elbow2/Right_StubHand
+        weight: 1
+      - path: Head/Neck/Spine
+        weight: 1
+      - path: Head/Neck/Spine/Torso
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/Butt_Chaps
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/Butt_Chaps/Dome_Tail
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/Butt_Chaps/Dome_Tail/Origin
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/Butt_Chaps/Left_Leg_Back4_Joint
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/Butt_Chaps/Left_Leg_Back4_Joint/Left_Leg_Back4_Knee
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/Butt_Chaps/Left_Leg_Back4_Joint/Left_Leg_Back4_Knee/Left_Leg_Back4_Knee2
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/Butt_Chaps/Left_Leg_Back4_Joint/Left_Leg_Back4_Knee/Left_Leg_Back4_Knee2/Left_Leg_Back4_Foot
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/Butt_Chaps/Right_Leg_Back4_Joint
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/Butt_Chaps/Right_Leg_Back4_Joint/Right_Leg_Back4_Knee
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/Butt_Chaps/Right_Leg_Back4_Joint/Right_Leg_Back4_Knee/Right_Leg_Back4_Knee2
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/Butt_Chaps/Right_Leg_Back4_Joint/Right_Leg_Back4_Knee/Right_Leg_Back4_Knee2/Right_Leg_Back4_Foot
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/joint5
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/joint5/joint6
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/joint5/joint6/joint7
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/joint5/joint6/joint7/joint8
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/joint13
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/joint13/joint14
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/joint13/joint14/joint15
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/joint13/joint14/joint15/joint16
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/joint1
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/joint1/joint2
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/joint1/joint2/joint3
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/joint9
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/joint9/joint10
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/joint9/joint10/joint11
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/joint9/joint10/joint11/joint12
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Left_Leg_Front1_Joint
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Left_Leg_Front1_Joint/Left_Leg_Front1_Knee
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Left_Leg_Front1_Joint/Left_Leg_Front1_Knee/Left_Leg_Front1_Knee2
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Left_Leg_Front1_Joint/Left_Leg_Front1_Knee/Left_Leg_Front1_Knee2/Leg_Leg_Front1_Foot
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Right_Leg_Front1_Joint
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Right_Leg_Front1_Joint/Right_Leg_Front1_Knee
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Right_Leg_Front1_Joint/Right_Leg_Front1_Knee/Right_Leg_Front1_Knee2
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Right_Leg_Front1_Joint/Right_Leg_Front1_Knee/Right_Leg_Front1_Knee2/Right_Leg_Front1_Foot
+        weight: 1
+      - path: modo_xpt_zbrush_0010
+        weight: 1
+      - path: modo_xpt_zbrush_0010/modo_xpt_zbrush_0010_MeshPart0
+        weight: 1
+      - path: modo_xpt_zbrush_0010/modo_xpt_zbrush_0010_MeshPart1
+        weight: 1
+      - path: modo_xpt_zbrush_0010/modo_xpt_zbrush_0010_MeshPart2
+        weight: 1
+      - path: nurbsCircle11
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 36
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Head/Neck
+        weight: 1
+      - path: Head/Neck/Left_Shoulder
+        weight: 1
+      - path: Head/Neck/Left_Shoulder/Left_Elbow1
+        weight: 1
+      - path: Head/Neck/Left_Shoulder/Left_Elbow1/Left_Elbow2
+        weight: 1
+      - path: Head/Neck/Left_Shoulder/Left_Elbow1/Left_Elbow2/Left_StubHand
+        weight: 1
+      - path: Head/Neck/Right_Shoulder
+        weight: 1
+      - path: Head/Neck/Right_Shoulder/Right_Elbow1
+        weight: 1
+      - path: Head/Neck/Right_Shoulder/Right_Elbow1/Right_Elbow2
+        weight: 1
+      - path: Head/Neck/Right_Shoulder/Right_Elbow1/Right_Elbow2/Right_StubHand
+        weight: 1
+      - path: Head/Neck/Spine
+        weight: 1
+      - path: Head/Neck/Spine/Torso
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/Butt_Chaps
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/Butt_Chaps/Dome_Tail
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/Butt_Chaps/Dome_Tail/Origin
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/Butt_Chaps/Left_Leg_Back4_Joint
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/Butt_Chaps/Left_Leg_Back4_Joint/Left_Leg_Back4_Knee
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/Butt_Chaps/Left_Leg_Back4_Joint/Left_Leg_Back4_Knee/Left_Leg_Back4_Knee2
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/Butt_Chaps/Left_Leg_Back4_Joint/Left_Leg_Back4_Knee/Left_Leg_Back4_Knee2/Left_Leg_Back4_Foot
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/Butt_Chaps/Right_Leg_Back4_Joint
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/Butt_Chaps/Right_Leg_Back4_Joint/Right_Leg_Back4_Knee
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/Butt_Chaps/Right_Leg_Back4_Joint/Right_Leg_Back4_Knee/Right_Leg_Back4_Knee2
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/Butt_Chaps/Right_Leg_Back4_Joint/Right_Leg_Back4_Knee/Right_Leg_Back4_Knee2/Right_Leg_Back4_Foot
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/joint5
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/joint5/joint6
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/joint5/joint6/joint7
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/joint5/joint6/joint7/joint8
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/joint13
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/joint13/joint14
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/joint13/joint14/joint15
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/Hip_3/joint13/joint14/joint15/joint16
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/joint1
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/joint1/joint2
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/joint1/joint2/joint3
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/joint9
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/joint9/joint10
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/joint9/joint10/joint11
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Hip_2/joint9/joint10/joint11/joint12
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Left_Leg_Front1_Joint
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Left_Leg_Front1_Joint/Left_Leg_Front1_Knee
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Left_Leg_Front1_Joint/Left_Leg_Front1_Knee/Left_Leg_Front1_Knee2
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Left_Leg_Front1_Joint/Left_Leg_Front1_Knee/Left_Leg_Front1_Knee2/Leg_Leg_Front1_Foot
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Right_Leg_Front1_Joint
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Right_Leg_Front1_Joint/Right_Leg_Front1_Knee
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Right_Leg_Front1_Joint/Right_Leg_Front1_Knee/Right_Leg_Front1_Knee2
+        weight: 1
+      - path: Head/Neck/Spine/Torso/Hip_1/Right_Leg_Front1_Joint/Right_Leg_Front1_Knee/Right_Leg_Front1_Knee2/Right_Leg_Front1_Foot
+        weight: 1
+      - path: modo_xpt_zbrush_0010
+        weight: 1
+      - path: modo_xpt_zbrush_0010/modo_xpt_zbrush_0010_MeshPart0
+        weight: 1
+      - path: modo_xpt_zbrush_0010/modo_xpt_zbrush_0010_MeshPart1
+        weight: 1
+      - path: modo_xpt_zbrush_0010/modo_xpt_zbrush_0010_MeshPart2
+        weight: 1
+      - path: nurbsCircle11
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
