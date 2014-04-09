@@ -3,10 +3,12 @@ var moveSpeed = 3; //move speed
 var rotationSpeed = 3; //speed of turning
  
 var myTransform : Transform; //current transform data of this enemy
+var my_animator:Animator;
  
 function Awake()
 {
     myTransform = transform; //cache transform data for easy access/performance
+    my_animator = GetComponent(Animator);
 
 }
  
@@ -25,7 +27,5 @@ function Update () {
  
     //move towards the player
     myTransform.position += myTransform.forward * moveSpeed * Time.deltaTime;
- 
- 
- 
+    my_animator.SetFloat("Speed",moveSpeed); 
 }

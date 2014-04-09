@@ -1,19 +1,5 @@
-
 // Require a character controller to be attached to the same game object
 @script RequireComponent(CharacterController)
-
-public var idleAnimation : AnimationClip;
-public var walkAnimation : AnimationClip;
-public var runAnimation : AnimationClip;
-public var jumpPoseAnimation : AnimationClip;
-
-public var walkMaxAnimationSpeed : float = 0.75;
-public var trotMaxAnimationSpeed : float = 1.0;
-public var runMaxAnimationSpeed : float = 1.0;
-public var jumpAnimationSpeed : float = 1.15;
-public var landAnimationSpeed : float = 1.0;
-
-private var _animation : Animation;
 
 enum CharacterState {
 	Idle = 0,
@@ -30,7 +16,7 @@ var walkSpeed = 2.0;
 // after trotAfterSeconds of walking we trot with trotSpeed
 var trotSpeed = 4.0;
 // when pressing "Fire3" button (cmd) we start running
-var runSpeed = 6.0;
+var runSpeed = 6.0; 
 
 var inAirControlAcceleration = 3.0;
 
@@ -45,6 +31,8 @@ var rotateSpeed = 500.0;
 var trotAfterSeconds = 3.0;
 
 var canJump = true;
+
+
 
 private var jumpRepeatTime = 0.05;
 private var jumpTimeout = 0.15;
@@ -90,36 +78,13 @@ private var lastGroundedTime = 0.0;
 
 private var isControllable = true;
 
+var my_animator:Animator;
+
 function Awake ()
 {
+    my_animator = GetComponent(Animator);
 	moveDirection = transform.TransformDirection(Vector3.forward);
 	
-	_animation = GetComponent(Animation);
-	if(!_animation)
-		Debug.Log("The character you would like to control doesn't have animations. Moving her might look weird.");
-	
-	/*
-public var idleAnimation : AnimationClip;
-public var walkAnimation : AnimationClip;
-public var runAnimation : AnimationClip;
-public var jumpPoseAnimation : AnimationClip;	
-	*/
-	if(!idleAnimation) {
-		_animation = null;
-		Debug.Log("No idle animation found. Turning off animations.");
-	}
-	if(!walkAnimation) {
-		_animation = null;
-		Debug.Log("No walk animation found. Turning off animations.");
-	}
-	if(!runAnimation) {
-		_animation = null;
-		Debug.Log("No run animation found. Turning off animations.");
-	}
-	if(!jumpPoseAnimation && canJump) {
-		_animation = null;
-		Debug.Log("No jump animation found and the character has canJump enabled. Turning off animations.");
-	}
 			
 }
 
@@ -205,8 +170,10 @@ function UpdateSmoothedMovementDirection ()
 			targetSpeed *= walkSpeed;
 			_characterState = CharacterState.Walking;
 		}
-		
 		moveSpeed = Mathf.Lerp(moveSpeed, targetSpeed, curSmooth);
+                my_animator.SetFloat("Speed",moveSpeed);
+                Debug.Log(moveSpeed);
+                Debug.Log(my_animator.GetCurrentAnimationClipState(0));
 		
 		// Reset walk time start when we slow down
 		if (moveSpeed < walkSpeed * 0.3)
@@ -316,45 +283,6 @@ function Update() {
 	// Move the controller
 	var controller : CharacterController = GetComponent(CharacterController);
 	collisionFlags = controller.Move(movement);
-	
-	// ANIMATION sector
-	if(_animation) {
-		if(_characterState == CharacterState.Jumping) 
-		{
-			if(!jumpingReachedApex) {
-				_animation[jumpPoseAnimation.name].speed = jumpAnimationSpeed;
-				_animation[jumpPoseAnimation.name].wrapMode = WrapMode.ClampForever;
-				_animation.CrossFade(jumpPoseAnimation.name);
-			} else {
-				_animation[jumpPoseAnimation.name].speed = -landAnimationSpeed;
-				_animation[jumpPoseAnimation.name].wrapMode = WrapMode.ClampForever;
-				_animation.CrossFade(jumpPoseAnimation.name);				
-			}
-		} 
-		else 
-		{
-			if(controller.velocity.sqrMagnitude < 0.1) {
-				_animation.CrossFade(idleAnimation.name);
-			}
-			else 
-			{
-				if(_characterState == CharacterState.Running) {
-					_animation[runAnimation.name].speed = Mathf.Clamp(controller.velocity.magnitude, 0.0, runMaxAnimationSpeed);
-					_animation.CrossFade(runAnimation.name);	
-				}
-				else if(_characterState == CharacterState.Trotting) {
-					_animation[walkAnimation.name].speed = Mathf.Clamp(controller.velocity.magnitude, 0.0, trotMaxAnimationSpeed);
-					_animation.CrossFade(walkAnimation.name);	
-				}
-				else if(_characterState == CharacterState.Walking) {
-					_animation[walkAnimation.name].speed = Mathf.Clamp(controller.velocity.magnitude, 0.0, walkMaxAnimationSpeed);
-					_animation.CrossFade(walkAnimation.name);	
-				}
-				
-			}
-		}
-	}
-	// ANIMATION sector
 	
 	// Set rotation to the move direction
 	if (IsGrounded())
