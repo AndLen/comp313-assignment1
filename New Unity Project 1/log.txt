@@ -1,0 +1,7 @@
+Lighting
+
+Terrain too big
+
+AI bouncing around...
+
+Was having problems using the built-in ThirdPartyController for animations, so made my own Animator with a state machine representing the transitions. The Controller now gives its speed to the animator which changes animator depending on idle/walking/running. Added bonus is this works with the AI too! 

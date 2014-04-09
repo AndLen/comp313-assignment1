@@ -172,8 +172,6 @@ function UpdateSmoothedMovementDirection ()
 		}
 		moveSpeed = Mathf.Lerp(moveSpeed, targetSpeed, curSmooth);
                 my_animator.SetFloat("Speed",moveSpeed);
-                Debug.Log(moveSpeed);
-                Debug.Log(my_animator.GetCurrentAnimationClipState(0));
 		
 		// Reset walk time start when we slow down
 		if (moveSpeed < walkSpeed * 0.3)
