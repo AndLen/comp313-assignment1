@@ -20,12 +20,20 @@ function Start()
  
 function Update () {
     //rotate to look at the player
-
     
     myTransform.rotation = Quaternion.Slerp(myTransform.rotation,
     Quaternion.LookRotation(target.position - myTransform.position), rotationSpeed*Time.deltaTime);
  
     //move towards the player
+	//myTransform.forward.y = 0;
+	var transformVector = myTransform.position - target.position;
+	if(Mathf.Abs(transformVector.x) > 0.4 && Mathf.Abs(transformVector.z) > 0.4){
     myTransform.position += myTransform.forward * moveSpeed * Time.deltaTime;
     my_animator.SetFloat("Speed",moveSpeed); 
+	
+}else{
+    my_animator.SetFloat("Speed",0); 
+	
+}
+	
 }
