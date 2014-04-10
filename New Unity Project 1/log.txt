@@ -4,10 +4,10 @@ Terrain too big
 
 AI bouncing around...
 
-Was having problems using the built-in ThirdPartyController for animations, so made my own Animator with a state machine representing the transitions. The Controller now gives its speed to the animator which changes animator depending on idle/walking/running. Added bonus is this works with the AI too! 
-
-Addressed issues with AI bouncing by preventing the AI script from changing its y position. This meant I could then use the RigidBody properly and the AI now obeys gravity. In addition, stopped AI running into the player for now.
-
+- Was having problems using the built-in ThirdPartyController for animations, so made my own Animator with a state machine representing the transitions. The Controller now gives its speed to the animator which changes animator depending on idle/walking/running. Added bonus is this works with the AI too! 
+- Addressed issues with AI bouncing by preventing the AI script from changing its y position. This meant I could then use the RigidBody properly and the AI now obeys gravity. In addition, stopped AI running into the player for now.
 - Should have AI patrol in a circle around the pickups, and chase the player when they get near them.
-
-Added obstacles and code to the character controller to allow the user to push them.
+- Added obstacles and code to the character controller to allow the user to push them.
+- Added some trees and a tunnel to the gameworld to make things a bit more interesting/showcase some lighting.
+- Made the dice pickup-able and added a score to track the number picked up. Need to put them in an inventory now.
+- Added inventory using buttons to represent pickups. Can drop them by clicking the buttons, and the dice will reappear at the player's position and the score will decrease.

@@ -30,8 +30,6 @@ var speedSmoothing = 10.0;
 var rotateSpeed = 500.0;
 var trotAfterSeconds = 3.0;
 
-var weight = 6;
-var pushPower = 1;
 
 var canJump = true;
 
@@ -313,31 +311,6 @@ function Update() {
 			SendMessage("DidLand", SendMessageOptions.DontRequireReceiver);
 		}
 	}
-}
-
-function OnControllerColliderHit (hit : ControllerColliderHit )
-{
-//	Debug.DrawRay(hit.point, hit.normal);
-	if (hit.moveDirection.y > 0.01) 
-		return;
-		
-        var body = hit.collider.attachedRigidbody;
-        var force = Vector3.zero;
-        //no rigidbody
-        if (body == null || body.isKinematic) 
-        {
-            return;
-        }
-        //gravity and weight pushes things down
-        //push and speed is used to move things in other directions
-        if (hit.moveDirection.y < -0.3) {
-            force =  new Vector3 (0.0f, -0.5f, 0.0f) * gravity * weight;
-        } 
-        else {
-            force = hit.controller.velocity * pushPower;
-        }
-        //add force
-        body.AddForceAtPosition (force, hit.point);
 }
 
 function GetSpeed () {
