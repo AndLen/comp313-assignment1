@@ -11,3 +11,6 @@ AI bouncing around...
 - Added some trees and a tunnel to the gameworld to make things a bit more interesting/showcase some lighting.
 - Made the dice pickup-able and added a score to track the number picked up. Need to put them in an inventory now.
 - Added inventory using buttons to represent pickups. Can drop them by clicking the buttons, and the dice will reappear at the player's position and the score will decrease.
+- Added functionality so the AI patrols around the pickups and chases the player when they get within 10 (x and y) distance of them. They stop chasing when the player is out of the range. Should make the 2nd AI wait in the _middle_ of the patrol circle, and begin patrolling when the 1st AI is chasing (or chase if close and the 1st AI is patrolling)
+- Added the two AIs working together like that :-) Made the AI make the player drop an item if they have one when they get "hit".
+- Adjusted the 2nd (slave) AI to chase even if it was patrolling - otherwise it poses no risk when patrolling!

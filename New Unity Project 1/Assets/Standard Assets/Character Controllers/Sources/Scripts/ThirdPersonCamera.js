@@ -1,4 +1,4 @@
-
+#pragma strict
 
 var cameraTransform : Transform;
 private var _target : Transform;

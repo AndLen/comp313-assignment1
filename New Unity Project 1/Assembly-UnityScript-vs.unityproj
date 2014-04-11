@@ -46,9 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AdditionalCustomBehaviour.js" />
      <Compile Include="Assets\GUI_Script.js" />
-     <Compile Include="Assets\_Scripts\AI_JS.js" />
+     <Compile Include="Assets\_Scripts\AdditionalCustomBehaviour.js" />
+     <Compile Include="Assets\_Scripts\Master_AI.js" />
+     <Compile Include="Assets\_Scripts\Slave_AI.js" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
