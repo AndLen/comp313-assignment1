@@ -30,13 +30,18 @@ function Start() {
 
 }
 
+
 function Update() {
+if(ObstacleInWay()){
+ moveSpeed = 0;
+}else{
     if(playerInRange()){
     	state = AIState.Chasing;
     	Chase();
     }else{	
     state = AIState.Patrolling;
     Patrol();
+    }
     }
     my_animator.SetFloat("Speed", moveSpeed);
 
@@ -48,11 +53,11 @@ function Chase() {
     myTransform.rotation = Quaternion.Slerp(myTransform.rotation,
         Quaternion.LookRotation(target.position - myTransform.position), rotationSpeed * Time.deltaTime);
 
-        if(atLocation(target.position)){
+        if(hittingPlayer()){
     	moveSpeed = 0;
     	guiScript.removeItem(true);
     }else{
-    	 moveSpeed = 3;
+    	 moveSpeed = RUN_SPEED;
             //move towards the player
         myTransform.position += myTransform.forward * moveSpeed * Time.deltaTime;
     }
@@ -61,7 +66,7 @@ function Chase() {
 
 function Patrol() {
 	//Move to the next position if we're at our target one.
-    if(atLocation(patrolWayPoints[wayPointIndex].position)){
+    if(atLocation(patrolWayPoints[wayPointIndex].position,0.4)){
     if (wayPointIndex == patrolWayPoints.Length - 1) {
         wayPointIndex = 0;
     } else {
@@ -69,22 +74,36 @@ function Patrol() {
     }
     }
     var nextWayPointPosition = patrolWayPoints[wayPointIndex].position;
-    moveSpeed = 3;
+    moveSpeed = RUN_SPEED;
     myTransform.rotation = Quaternion.Slerp(myTransform.rotation,
         Quaternion.LookRotation(nextWayPointPosition - myTransform.position), rotationSpeed * Time.deltaTime);
     myTransform.position += myTransform.forward * moveSpeed * Time.deltaTime;
 
 }
 
-function atLocation(targetPosition: Vector3){
+function atLocation(targetPosition: Vector3,distance: float){
     var transformVector = myTransform.position - targetPosition;
-    return Mathf.Abs(transformVector.x) < 0.4 && Mathf.Abs(transformVector.z) < 0.4;
+    return Mathf.Abs(transformVector.x) < distance && Mathf.Abs(transformVector.z) < distance;
 
 }
 
 function playerInRange(){
-    var transformVector = myTransform.position - target.position;
-        return Mathf.Abs(transformVector.x) < CHASE_LIMIT && Mathf.Abs(transformVector.z) < CHASE_LIMIT;
+return atLocation(target.position, CHASE_LIMIT);
+}
+function hittingPlayer(){
+return atLocation(target.position, 0.4);
+
+}
+
+function ObstacleInWay(){
+	var obstacles : GameObject[] = GameObject.FindGameObjectsWithTag("Obstacle");
+	for(var obstacle: GameObject in obstacles){
+		Debug.Log(obstacle);
+		if(atLocation(obstacle.transform.position,2)){
+		return true;
+		}
+	}
+	return false;
 
 }
 

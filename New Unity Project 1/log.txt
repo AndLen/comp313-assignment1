@@ -14,3 +14,4 @@ AI bouncing around...
 - Added functionality so the AI patrols around the pickups and chases the player when they get within 10 (x and y) distance of them. They stop chasing when the player is out of the range. Should make the 2nd AI wait in the _middle_ of the patrol circle, and begin patrolling when the 1st AI is chasing (or chase if close and the 1st AI is patrolling)
 - Added the two AIs working together like that :-) Made the AI make the player drop an item if they have one when they get "hit".
 - Adjusted the 2nd (slave) AI to chase even if it was patrolling - otherwise it poses no risk when patrolling!
+- The AI will now stop upon coming close to one of the sphere obstacles, and won't move until it is out of their range. This can be seen by pushing one to the circling AI's position, or making an AI follow you to the sphere's location. Just need to add pathfinding now!

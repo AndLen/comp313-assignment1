@@ -25,6 +25,9 @@ function Start() {
 }
 
 function Update() {
+if(ObstacleInWay()){
+ moveSpeed = 0;
+}else{
     var masterState = masterAI.currentState();
     if (masterState == AIState.Patrolling) {
         if (playerInRange()) {
@@ -39,6 +42,7 @@ function Update() {
             Patrol();
         }
     }
+}
     my_animator.SetFloat("Speed", moveSpeed);
 
 
@@ -49,7 +53,7 @@ function Chase() {
     myTransform.rotation = Quaternion.Slerp(myTransform.rotation,
         Quaternion.LookRotation(target.position - myTransform.position), rotationSpeed * Time.deltaTime);
 
-    if (atLocation(target.position)) {
+    if (hittingPlayer()) {
         masterAI.guiScript.removeItem(true);
         moveSpeed = 0;
     } else {
@@ -62,7 +66,7 @@ function Chase() {
 
 function Patrol() {
     //Move to the next position if we're at our target one.
-    if (atLocation(masterAI.patrolWayPoints[wayPointIndex].position)) {
+    if (atLocation(masterAI.patrolWayPoints[wayPointIndex].position,0.4)) {
         if (wayPointIndex == masterAI.patrolWayPoints.Length - 1) {
             wayPointIndex = 0;
         } else {
@@ -78,7 +82,7 @@ function Patrol() {
 }
 
 function ReturnToOrigin() {
-    if (atLocation(origin.position)) {
+    if (atLocation(origin.position,0.4)) {
         moveSpeed = 0;
     } else {
         myTransform.rotation = Quaternion.Slerp(myTransform.rotation,
@@ -89,14 +93,28 @@ function ReturnToOrigin() {
 
 }
 
-function atLocation(targetPosition: Vector3) {
+function atLocation(targetPosition: Vector3,distance: float){
     var transformVector = myTransform.position - targetPosition;
-    return Mathf.Abs(transformVector.x) < 0.4 && Mathf.Abs(transformVector.z) < 0.4;
+    return Mathf.Abs(transformVector.x) < distance && Mathf.Abs(transformVector.z) < distance;
 
 }
 
-function playerInRange() {
-    var transformVector = myTransform.position - target.position;
-    return Mathf.Abs(transformVector.x) < Master_AI.CHASE_LIMIT && Mathf.Abs(transformVector.z) < Master_AI.CHASE_LIMIT;
+function playerInRange(){
+return atLocation(target.position, Master_AI.CHASE_LIMIT);
+}
+function hittingPlayer(){
+return atLocation(target.position, 0.4);
+
+}
+
+function ObstacleInWay(){
+	var obstacles : GameObject[] = GameObject.FindGameObjectsWithTag("Obstacle");
+	for(var obstacle: GameObject in obstacles){
+		Debug.Log(obstacle);
+		if(atLocation(obstacle.transform.position,2)){
+		return true;
+		}
+	}
+	return false;
 
 }
