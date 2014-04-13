@@ -91,14 +91,13 @@ function playerInRange(){
 return atLocation(target.position, CHASE_LIMIT);
 }
 function hittingPlayer(){
-return atLocation(target.position, 0.4);
+return atLocation(target.position, 1);
 
 }
 
 function ObstacleInWay(){
 	var obstacles : GameObject[] = GameObject.FindGameObjectsWithTag("Obstacle");
 	for(var obstacle: GameObject in obstacles){
-		Debug.Log(obstacle);
 		if(atLocation(obstacle.transform.position,2)){
 		return true;
 		}

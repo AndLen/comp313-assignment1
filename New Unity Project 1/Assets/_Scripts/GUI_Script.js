@@ -47,12 +47,11 @@ function updateScore(addAmount: int) {
 
 function removeItem(forcefullyRemoved: boolean) {
     if (forcefullyRemoved) {
-        if (Time.time - lastItemRemovedTime > 1) {
+        if (Time.time - lastItemRemovedTime > 0.25) {
             updateScore(-1);
             additionalCustomBehaviour.unhidePickup();
-
+            lastItemRemovedTime = Time.time;
         }
-        lastItemRemovedTime = Time.time;
 
 
     } else {

@@ -1,13 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\Slave_AI.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\AdditionalCustomBehaviour.js">
     <Files>
-      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.js" Line="177" Column="1" />
+      <File FileName="Assets\_Scripts\AdditionalCustomBehaviour.js" Line="1" Column="1" />
       <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.js" Line="1" Column="1" />
-      <File FileName="Assets\GUI_Script.js" Line="1" Column="1" />
       <File FileName="Assets\_Scripts\Slave_AI.js" Line="103" Column="57" />
-      <File FileName="Assets\_Scripts\Master_AI.js" Line="112" Column="2" />
-      <File FileName="Assets\_Scripts\AdditionalCustomBehaviour.js" Line="33" Column="11" />
+      <File FileName="Assets\_Scripts\Master_AI.js" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\AdditionalCustomBehaviour.js" Line="66" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

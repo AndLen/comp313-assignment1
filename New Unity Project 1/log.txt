@@ -15,3 +15,4 @@ AI bouncing around...
 - Added the two AIs working together like that :-) Made the AI make the player drop an item if they have one when they get "hit".
 - Adjusted the 2nd (slave) AI to chase even if it was patrolling - otherwise it poses no risk when patrolling!
 - The AI will now stop upon coming close to one of the sphere obstacles, and won't move until it is out of their range. This can be seen by pushing one to the circling AI's position, or making an AI follow you to the sphere's location. Just need to add pathfinding now!
+- It seems like the AI isn't very good at knocking the dice (pickups) off the player. This seems to be because the timer since they last removed a pickup is reset whether one was removed or not! Fixed that, but now the AI is running INTO the player which makes sense, but means they knock the player up into the air.. Kinda fixed this by decreasing how close the AI gets to the player, and increasing the rate at which they knock the dice off.
