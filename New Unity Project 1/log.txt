@@ -1,9 +1,12 @@
-Lighting
+Log (chronological order, forgot that dating it might be smart, oops).
 
-Terrain too big
-
-AI bouncing around...
-
+- Started off by making a basic terrain and one user-controller character. Decided to use the built-in ThirdPartyController/Camera for this, since it seems to work well.
+- Added four boundary walls to prevent the player going off the map.
+- The terrain is massive by default, and if I scale my characters up, they look a bit weird (artifacts?) and my character camera is basically inside the character. Going to scale everything down to be more managable.
+- Need some lighting..everything is pretty dim. 
+- Added one overhead point light, but it seems to shine just on one spot in particular - I really want equal light around the whole place. 
+- Found a tutorial on the Unity doc site which combines two directional lights (a main light and a fill light) to give a better lighting effect.
+- Added a hill to the terrain because it's pretty.
 - Was having problems using the built-in ThirdPartyController for animations, so made my own Animator with a state machine representing the transitions. The Controller now gives its speed to the animator which changes animator depending on idle/walking/running. Added bonus is this works with the AI too! 
 - Addressed issues with AI bouncing by preventing the AI script from changing its y position. This meant I could then use the RigidBody properly and the AI now obeys gravity. In addition, stopped AI running into the player for now.
 - Should have AI patrol in a circle around the pickups, and chase the player when they get near them.
@@ -16,3 +19,30 @@ AI bouncing around...
 - Adjusted the 2nd (slave) AI to chase even if it was patrolling - otherwise it poses no risk when patrolling!
 - The AI will now stop upon coming close to one of the sphere obstacles, and won't move until it is out of their range. This can be seen by pushing one to the circling AI's position, or making an AI follow you to the sphere's location. Just need to add pathfinding now!
 - It seems like the AI isn't very good at knocking the dice (pickups) off the player. This seems to be because the timer since they last removed a pickup is reset whether one was removed or not! Fixed that, but now the AI is running INTO the player which makes sense, but means they knock the player up into the air.. Kinda fixed this by decreasing how close the AI gets to the player, and increasing the rate at which they knock the dice off.
+- Last thing to do is the pathfinding algorithm. I don't know how I can incorporate this into the current two AI creatures as it'd disrupt their behaviour - I think I'll have to make a 3rd AI unit who only does pathfinding on a specific (distinct) object.
+- Added a 3rd enemy and a gold cylinder for them to chase after. The player can move this cylinder and the AI should then find a path to it!
+- A* seems the most obvious pathfinding algorithm to use - maybe I can alter it from my COMP261 assignment last year. 
+- Attempting to get A* working, but I can't seem to find a decent priority queue implementation in C# or JS. This is kinda central to the algorithm..
+- Decided to write my own priority queue by copying the Java PriorityQueue implementation into C#. Don't need the whole thing - just adding/removing and finding the size.
+- Got the priority queue implemented, now to work on A*. The heuristic seems like it can just be euclidian distance, but how do we represent that with walls and no co-ordinates etc?
+- Decided to cut the terrain up into 3x3 squares (so 17x17 squares roughly) as the AI unit needs about 3x3 in space to move. The centre of these squares will act as nodes, and neighbouring squares/nodes will have an "edge" between them if there is no collider in the way (e.g. using Physics.OverlapSphere).
+- Implemented A*, but there's a few outstanding bugs - like the terrain is a collider itself so need to allow ONE collider to be there. Also it seems to be finding the LONGEST path...
+- Ah, was finding the longest path as the comparator is the opposite way round in C# (returns 1 if x >y rather than -1 like in java!). 
+- Okay, seems to be mostly working. Can have some trouble when the target is placed near a corner or in a small gap, but that's a limitation we'll just have to deal.
+- Added better GUI textures for the two pickups.
+- Think it's about done now. All the requirements and extensions completed, but using 3 AI units instead of 2 (should be okay?)
+- It's annoying that I ended up with a combination of C# and JS code, as it's harder to interact between the two. In the future I'll probably try to stick to C# as it's clearer with typing, MovoDevelop is better with it, and the OO approach seems more appropriate for a game due to the number of objects in the game.
+
+SUMMARY:
+
+Controls:
+You control the character as you except - arrow keys or WASD and space bar to jump. To pickup objects (dice or golden cylinder) simply walk through them. To drop objects, click their icon in the inventory (top left). You can also push the grey sphere objects as you wish.
+
+AI:
+The object of the game is essentially to collect all 12 dice in the game world. This in itself is not much of a challenge - the dice are not hidden (are all in the centre of the game). There are however, two AI characters who will try to stop you collecting the dice. The "master" AI character patrols around all the dice locations, and will chase you if you get close. The 2nd "slave" AI controller will wait in the middle of the dice, either for you to get too close (in which case he will chase you) or for the "master" AI character to begin chasing you (in which case he will take over the master's patrol route to prevent you getting dice by luring the master away). These AI are slower than you, and will only follow you a short-ish distance, so the game is still not too hard - but their technique in working together can be challenging at times!
+
+When either of these two AI catch you, they will knock dice out of your inventory while they remain close to you - so don't let them get to you or stay next to you!
+
+In addition to chasing you, these two AI characters will stop where they are when they come close to one of the five grey spheres in the gameworld. These can hence be used to "trap" the AI so you can then pickup dice. You'll have to move them from their initial spots though!
+
+Finally, there is a 3rd AI character (he spawns in the tunnel) whose job it is to find a path to the golden cylinder (starts in the tunnel). He does this using an A* path-finding search. The player can pickup this golden cylinder and drop it somewhere else, in which case the AI character will do A* again and travel to it's location. This AI character will not chase the player, as it is intended only to showcase the A* implementation.
