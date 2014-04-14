@@ -3,6 +3,7 @@ var contoller: ThirdPersonController;
 var score: int;
 var scoreText: GUIText;
 var pickupTexture: Texture;
+var targetTexture: Texture;
 var additionalCustomBehaviour: AdditionalCustomBehaviour;
 private var lastItemRemovedTime: float;
 
@@ -35,6 +36,14 @@ function OnGUI() {
     }
 
     GUILayout.EndArea();
+    if(additionalCustomBehaviour.targetHeld()){
+        GUILayout.BeginArea(Rect(250, 10, 60, 60));
+    if(GUILayout.Button(targetTexture, GUILayout.Height(50), GUILayout.Width(50))){
+    	additionalCustomBehaviour.unhideTarget();
+    }
+        GUILayout.EndArea();
+
+    }
 
 }
 

@@ -46,6 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\_Scripts\A_Star.cs" />
+     <Compile Include="Assets\_Scripts\A_Star_Object.cs" />
+     <Compile Include="Assets\_Scripts\Pathfinding_AI.cs" />
+     <Compile Include="Assets\_Scripts\PriorityQueue.cs" />
      <Compile Include="Assets\_Scripts\Rotator.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -6,6 +6,7 @@ private var pushPower = 1;
 var guiScript: GUI_Script;
 
 var hiddenObjects = new Array();
+var hiddenTarget:GameObject = null;
 function Start () {
 }
 
@@ -44,6 +45,9 @@ function OnTriggerEnter (other : Collider) {
             hiddenObjects.Push(other.gameObject);
             guiScript.updateScore(1);
 
+        }else if(other.gameObject.tag =="Target"){
+        	other.gameObject.SetActive(false);
+        	hiddenTarget = other.gameObject;
         }
 }
 
@@ -56,6 +60,18 @@ function unhidePickup(){
     unhideAfterDelay(unhide);
     }
 
+}
+
+function unhideTarget(){
+    var playerObject = GameObject.Find("Player");
+    var playerPos:Vector3 = playerObject.transform.position;
+    hiddenTarget.transform.position = playerPos;
+    unhideAfterDelay(hiddenTarget);
+    hiddenTarget = null;
+}
+
+function targetHeld(){
+return hiddenTarget != null;
 }
 
 function unhideAfterDelay(toUnhide: GameObject){
