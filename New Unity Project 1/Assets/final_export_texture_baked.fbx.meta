@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: e960e3df44916da42809a17956a7fdb6
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: bakeme:BackLeg_L
+    100002: bakeme:BackLeg_R
+    100004: bakeme:BootyLikePow
+    100006: bakeme:FrontLeg_L
+    100008: bakeme:FrontLeg_R
+    100010: bakeme:Head
+    100012: bakeme:Hip1
+    100014: bakeme:Hip2
+    100016: bakeme:Hip3
+    100018: bakeme:ikHandle1
+    100020: bakeme:ikHandle10
+    100022: bakeme:ikHandle11
+    100024: bakeme:ikHandle2
+    100026: bakeme:ikHandle3
+    100028: bakeme:ikHandle4
+    100030: bakeme:ikHandle5
+    100032: bakeme:ikHandle6
+    100034: bakeme:ikHandle7
+    100036: bakeme:ikHandle8
+    100038: bakeme:ikHandle9
+    100040: bakeme:joint1
+    100042: bakeme:joint10
+    100044: bakeme:joint11
+    100046: bakeme:joint12
+    100048: bakeme:joint13
+    100050: bakeme:joint14
+    100052: bakeme:joint15
+    100054: bakeme:joint16
+    100056: bakeme:joint17
+    100058: bakeme:joint18
+    100060: bakeme:joint19
+    100062: bakeme:joint2
+    100064: bakeme:joint20
+    100066: bakeme:joint21
+    100068: bakeme:joint22
+    100070: bakeme:joint23
+    100072: bakeme:joint24
+    100074: bakeme:joint25
+    100076: bakeme:joint26
+    100078: bakeme:joint27
+    100080: bakeme:joint28
+    100082: bakeme:joint29
+    100084: bakeme:joint3
+    100086: bakeme:joint30
+    100088: bakeme:joint31
+    100090: bakeme:joint32
+    100092: bakeme:joint33
+    100094: bakeme:joint34
+    100096: bakeme:joint35
+    100098: bakeme:joint36
+    100100: bakeme:joint37
+    100102: bakeme:joint38
+    100104: bakeme:joint39
+    100106: bakeme:joint4
+    100108: bakeme:joint40
+    100110: bakeme:joint41
+    100112: bakeme:joint42
+    100114: bakeme:joint43
+    100116: bakeme:joint44
+    100118: bakeme:joint45
+    100120: bakeme:joint46
+    100122: bakeme:joint5
+    100124: bakeme:joint6
+    100126: bakeme:joint7
+    100128: bakeme:joint8
+    100130: bakeme:joint9
+    100132: bakeme:MidLeg_L
+    100134: bakeme:MidLeg_R
+    100136: bakeme:MidSpine
+    100138: bakeme:Neck
+    100140: bakeme:pasted__Character_Behemoth_CaveStrider1
+    100142: bakeme:pasted__Character_Behemoth_CaveStrider1_MeshPart0
+    100144: bakeme:pasted__Character_Behemoth_CaveStrider1_MeshPart1
+    100146: bakeme:ShellSpine_MID
+    100148: bakeme:Skeleton_Bind_MAIN_Smooth_221
+    100150: bakeme:Spine
+    100152: bakeme:SpineEnd
+    100154: //RootNode
+    400000: bakeme:BackLeg_L
+    400002: bakeme:BackLeg_R
+    400004: bakeme:BootyLikePow
+    400006: bakeme:FrontLeg_L
+    400008: bakeme:FrontLeg_R
+    400010: bakeme:Head
+    400012: bakeme:Hip1
+    400014: bakeme:Hip2
+    400016: bakeme:Hip3
+    400018: bakeme:ikHandle1
+    400020: bakeme:ikHandle10
+    400022: bakeme:ikHandle11
+    400024: bakeme:ikHandle2
+    400026: bakeme:ikHandle3
+    400028: bakeme:ikHandle4
+    400030: bakeme:ikHandle5
+    400032: bakeme:ikHandle6
+    400034: bakeme:ikHandle7
+    400036: bakeme:ikHandle8
+    400038: bakeme:ikHandle9
+    400040: bakeme:joint1
+    400042: bakeme:joint10
+    400044: bakeme:joint11
+    400046: bakeme:joint12
+    400048: bakeme:joint13
+    400050: bakeme:joint14
+    400052: bakeme:joint15
+    400054: bakeme:joint16
+    400056: bakeme:joint17
+    400058: bakeme:joint18
+    400060: bakeme:joint19
+    400062: bakeme:joint2
+    400064: bakeme:joint20
+    400066: bakeme:joint21
+    400068: bakeme:joint22
+    400070: bakeme:joint23
+    400072: bakeme:joint24
+    400074: bakeme:joint25
+    400076: bakeme:joint26
+    400078: bakeme:joint27
+    400080: bakeme:joint28
+    400082: bakeme:joint29
+    400084: bakeme:joint3
+    400086: bakeme:joint30
+    400088: bakeme:joint31
+    400090: bakeme:joint32
+    400092: bakeme:joint33
+    400094: bakeme:joint34
+    400096: bakeme:joint35
+    400098: bakeme:joint36
+    400100: bakeme:joint37
+    400102: bakeme:joint38
+    400104: bakeme:joint39
+    400106: bakeme:joint4
+    400108: bakeme:joint40
+    400110: bakeme:joint41
+    400112: bakeme:joint42
+    400114: bakeme:joint43
+    400116: bakeme:joint44
+    400118: bakeme:joint45
+    400120: bakeme:joint46
+    400122: bakeme:joint5
+    400124: bakeme:joint6
+    400126: bakeme:joint7
+    400128: bakeme:joint8
+    400130: bakeme:joint9
+    400132: bakeme:MidLeg_L
+    400134: bakeme:MidLeg_R
+    400136: bakeme:MidSpine
+    400138: bakeme:Neck
+    400140: bakeme:pasted__Character_Behemoth_CaveStrider1
+    400142: bakeme:pasted__Character_Behemoth_CaveStrider1_MeshPart0
+    400144: bakeme:pasted__Character_Behemoth_CaveStrider1_MeshPart1
+    400146: bakeme:ShellSpine_MID
+    400148: bakeme:Skeleton_Bind_MAIN_Smooth_221
+    400150: bakeme:Spine
+    400152: bakeme:SpineEnd
+    400154: //RootNode
+    4300000: bakeme:pasted__Character_Behemoth_CaveStrider1_MeshPart0
+    4300002: bakeme:pasted__Character_Behemoth_CaveStrider1_MeshPart1
+    7400000: New Walk
+    7400002: New Idle
+    9500000: //RootNode
+    13700000: bakeme:pasted__Character_Behemoth_CaveStrider1_MeshPart0
+    13700002: bakeme:pasted__Character_Behemoth_CaveStrider1_MeshPart1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: New Walk
+      takeName: Take 001
+      firstFrame: 2
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: bakeme:BackLeg_L
+        weight: 1
+      - path: bakeme:BackLeg_R
+        weight: 1
+      - path: bakeme:FrontLeg_L
+        weight: 1
+      - path: bakeme:FrontLeg_R
+        weight: 1
+      - path: bakeme:ikHandle1
+        weight: 1
+      - path: bakeme:ikHandle2
+        weight: 1
+      - path: bakeme:ikHandle3
+        weight: 1
+      - path: bakeme:ikHandle4
+        weight: 1
+      - path: bakeme:ikHandle5
+        weight: 1
+      - path: bakeme:ikHandle6
+        weight: 1
+      - path: bakeme:ikHandle7
+        weight: 1
+      - path: bakeme:ikHandle8
+        weight: 1
+      - path: bakeme:ikHandle9
+        weight: 1
+      - path: bakeme:ikHandle10
+        weight: 1
+      - path: bakeme:ikHandle11
+        weight: 1
+      - path: bakeme:MidLeg_L
+        weight: 1
+      - path: bakeme:MidLeg_R
+        weight: 1
+      - path: bakeme:pasted__Character_Behemoth_CaveStrider1
+        weight: 1
+      - path: bakeme:pasted__Character_Behemoth_CaveStrider1/bakeme:pasted__Character_Behemoth_CaveStrider1_MeshPart0
+        weight: 1
+      - path: bakeme:pasted__Character_Behemoth_CaveStrider1/bakeme:pasted__Character_Behemoth_CaveStrider1_MeshPart1
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:BootyLikePow
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:BootyLikePow/bakeme:ShellSpine_MID
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint18
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint18/bakeme:joint19
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint18/bakeme:joint19/bakeme:joint20
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint18/bakeme:joint19/bakeme:joint20/bakeme:joint21
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint18/bakeme:joint19/bakeme:joint20/bakeme:joint21/bakeme:joint22
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint18/bakeme:joint19/bakeme:joint20/bakeme:joint21/bakeme:joint22/bakeme:joint23
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint41
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint41/bakeme:joint42
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint41/bakeme:joint42/bakeme:joint43
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint41/bakeme:joint42/bakeme:joint43/bakeme:joint44
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint41/bakeme:joint42/bakeme:joint43/bakeme:joint44/bakeme:joint45
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint41/bakeme:joint42/bakeme:joint43/bakeme:joint44/bakeme:joint45/bakeme:joint46
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint12
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint12/bakeme:joint13
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint12/bakeme:joint13/bakeme:joint14
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint12/bakeme:joint13/bakeme:joint14/bakeme:joint15
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint12/bakeme:joint13/bakeme:joint14/bakeme:joint15/bakeme:joint16
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint12/bakeme:joint13/bakeme:joint14/bakeme:joint15/bakeme:joint16/bakeme:joint17
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint35
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint35/bakeme:joint36
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint35/bakeme:joint36/bakeme:joint37
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint35/bakeme:joint36/bakeme:joint37/bakeme:joint38
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint35/bakeme:joint36/bakeme:joint37/bakeme:joint38/bakeme:joint39
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint35/bakeme:joint36/bakeme:joint37/bakeme:joint38/bakeme:joint39/bakeme:joint40
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:joint7
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:joint7/bakeme:joint8
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:joint7/bakeme:joint8/bakeme:joint9
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:joint7/bakeme:joint8/bakeme:joint9/bakeme:joint10
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:joint7/bakeme:joint8/bakeme:joint9/bakeme:joint10/bakeme:joint11
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:joint30
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:joint30/bakeme:joint31
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:joint30/bakeme:joint31/bakeme:joint32
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:joint30/bakeme:joint31/bakeme:joint32/bakeme:joint33
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:joint30/bakeme:joint31/bakeme:joint32/bakeme:joint33/bakeme:joint34
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint1
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint1/bakeme:joint2
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint1/bakeme:joint2/bakeme:joint3
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint1/bakeme:joint2/bakeme:joint3/bakeme:joint4
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint1/bakeme:joint2/bakeme:joint3/bakeme:joint4/bakeme:joint5
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint1/bakeme:joint2/bakeme:joint3/bakeme:joint4/bakeme:joint5/bakeme:joint6
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint24
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint24/bakeme:joint25
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint24/bakeme:joint25/bakeme:joint26
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint24/bakeme:joint25/bakeme:joint26/bakeme:joint27
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint24/bakeme:joint25/bakeme:joint26/bakeme:joint27/bakeme:joint28
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint24/bakeme:joint25/bakeme:joint26/bakeme:joint27/bakeme:joint28/bakeme:joint29
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:Neck
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:Neck/bakeme:Head
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: New Idle
+      takeName: Take 001
+      firstFrame: 61
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: bakeme:BackLeg_L
+        weight: 1
+      - path: bakeme:BackLeg_R
+        weight: 1
+      - path: bakeme:FrontLeg_L
+        weight: 1
+      - path: bakeme:FrontLeg_R
+        weight: 1
+      - path: bakeme:ikHandle1
+        weight: 1
+      - path: bakeme:ikHandle2
+        weight: 1
+      - path: bakeme:ikHandle3
+        weight: 1
+      - path: bakeme:ikHandle4
+        weight: 1
+      - path: bakeme:ikHandle5
+        weight: 1
+      - path: bakeme:ikHandle6
+        weight: 1
+      - path: bakeme:ikHandle7
+        weight: 1
+      - path: bakeme:ikHandle8
+        weight: 1
+      - path: bakeme:ikHandle9
+        weight: 1
+      - path: bakeme:ikHandle10
+        weight: 1
+      - path: bakeme:ikHandle11
+        weight: 1
+      - path: bakeme:MidLeg_L
+        weight: 1
+      - path: bakeme:MidLeg_R
+        weight: 1
+      - path: bakeme:pasted__Character_Behemoth_CaveStrider1
+        weight: 1
+      - path: bakeme:pasted__Character_Behemoth_CaveStrider1/bakeme:pasted__Character_Behemoth_CaveStrider1_MeshPart0
+        weight: 1
+      - path: bakeme:pasted__Character_Behemoth_CaveStrider1/bakeme:pasted__Character_Behemoth_CaveStrider1_MeshPart1
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:BootyLikePow
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:BootyLikePow/bakeme:ShellSpine_MID
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint18
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint18/bakeme:joint19
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint18/bakeme:joint19/bakeme:joint20
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint18/bakeme:joint19/bakeme:joint20/bakeme:joint21
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint18/bakeme:joint19/bakeme:joint20/bakeme:joint21/bakeme:joint22
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint18/bakeme:joint19/bakeme:joint20/bakeme:joint21/bakeme:joint22/bakeme:joint23
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint41
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint41/bakeme:joint42
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint41/bakeme:joint42/bakeme:joint43
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint41/bakeme:joint42/bakeme:joint43/bakeme:joint44
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint41/bakeme:joint42/bakeme:joint43/bakeme:joint44/bakeme:joint45
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:Hip3/bakeme:joint41/bakeme:joint42/bakeme:joint43/bakeme:joint44/bakeme:joint45/bakeme:joint46
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint12
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint12/bakeme:joint13
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint12/bakeme:joint13/bakeme:joint14
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint12/bakeme:joint13/bakeme:joint14/bakeme:joint15
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint12/bakeme:joint13/bakeme:joint14/bakeme:joint15/bakeme:joint16
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint12/bakeme:joint13/bakeme:joint14/bakeme:joint15/bakeme:joint16/bakeme:joint17
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint35
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint35/bakeme:joint36
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint35/bakeme:joint36/bakeme:joint37
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint35/bakeme:joint36/bakeme:joint37/bakeme:joint38
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint35/bakeme:joint36/bakeme:joint37/bakeme:joint38/bakeme:joint39
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:Hip2/bakeme:joint35/bakeme:joint36/bakeme:joint37/bakeme:joint38/bakeme:joint39/bakeme:joint40
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:joint7
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:joint7/bakeme:joint8
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:joint7/bakeme:joint8/bakeme:joint9
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:joint7/bakeme:joint8/bakeme:joint9/bakeme:joint10
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:joint7/bakeme:joint8/bakeme:joint9/bakeme:joint10/bakeme:joint11
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:joint30
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:joint30/bakeme:joint31
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:joint30/bakeme:joint31/bakeme:joint32
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:joint30/bakeme:joint31/bakeme:joint32/bakeme:joint33
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Hip1/bakeme:joint30/bakeme:joint31/bakeme:joint32/bakeme:joint33/bakeme:joint34
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint1
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint1/bakeme:joint2
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint1/bakeme:joint2/bakeme:joint3
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint1/bakeme:joint2/bakeme:joint3/bakeme:joint4
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint1/bakeme:joint2/bakeme:joint3/bakeme:joint4/bakeme:joint5
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint1/bakeme:joint2/bakeme:joint3/bakeme:joint4/bakeme:joint5/bakeme:joint6
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint24
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint24/bakeme:joint25
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint24/bakeme:joint25/bakeme:joint26
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint24/bakeme:joint25/bakeme:joint26/bakeme:joint27
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint24/bakeme:joint25/bakeme:joint26/bakeme:joint27/bakeme:joint28
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:joint24/bakeme:joint25/bakeme:joint26/bakeme:joint27/bakeme:joint28/bakeme:joint29
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:Neck
+        weight: 1
+      - path: bakeme:Skeleton_Bind_MAIN_Smooth_221/bakeme:Spine/bakeme:MidSpine/bakeme:SpineEnd/bakeme:Neck/bakeme:Head
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
